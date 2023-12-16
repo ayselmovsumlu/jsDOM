@@ -9,6 +9,7 @@ body .box {
   padding: 20px;
   background-color: #a4caff;
   border-radius: 20px;
+  margin-bottom: 40px;
 }
 body .box h1 {
   color: white;
