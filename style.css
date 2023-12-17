@@ -1,9 +1,12 @@
 body {
   font-family: "Dosis", sans-serif;
   font-weight: 500;
+}
+
+#task {
   padding: 30px 0;
 }
-body .box {
+#task .box {
   width: 250px;
   height: 220px;
   padding: 20px;
@@ -11,19 +14,27 @@ body .box {
   border-radius: 20px;
   margin-bottom: 40px;
 }
-body .box h1 {
+#task .box h1 {
   color: white;
   font-size: 40px;
   font-weight: 600;
 }
-body .box input {
+#task .box input {
   margin: 20px 0;
   border-radius: 20px;
   padding: 15px 10px;
 }
-body .box .btn {
+#task .box .btn {
   width: 70px;
   height: 40px;
   background-color: white;
   border-radius: 20px;
+}
+#task .minibox {
+  border: 2px solid #111010;
+  width: 190px;
+  height: 60px;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
