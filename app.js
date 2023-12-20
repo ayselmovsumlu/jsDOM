@@ -3,22 +3,15 @@ $(document).ready(function () {
 
     $('.btn').click(function (e) {
         e.preventDefault();
-
-        let f = a => {
-
-            for (let i = 1; i <= a; i++) {
-                $('.answer').append(`<div class="minibox"><h3>${a}</h3></div>`);
-
+        if (!$.trim($('input').val()) == '') {
+            let f = a => {
+                for (let i = 0; i < a; i++) { $('.answer').append(`<div class="minibox"><h3>${a}</h3></div>`); }
             }
+            let d = b => Number(b) ? f(b) : $('.answer').append(`<div class="minibox"><h3>${b}</h3></div>`);
+
+            d($('input').val());
         }
-
-        let d = b => {
-            b * 1 ? f($('input').val()) : $('.answer').append(`<div class="minibox"><h3>${b}</h3></div>`);
-        }
-
-
-        d($('input').val());
-
+        $('input').val('');
 
     });
 
